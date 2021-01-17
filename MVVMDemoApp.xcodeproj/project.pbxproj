@@ -13,6 +13,10 @@
 		7080C1D625B4CB030068F4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080C1D425B4CB030068F4A3 /* Main.storyboard */; };
 		7080C1D825B4CB050068F4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7080C1D725B4CB050068F4A3 /* Assets.xcassets */; };
 		7080C1DB25B4CB050068F4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7080C1D925B4CB050068F4A3 /* LaunchScreen.storyboard */; };
+		7080C1E425B4CDB80068F4A3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080C1E325B4CDB80068F4A3 /* TableViewCell.swift */; };
+		7080C1EB25B4CE8A0068F4A3 /* CryptoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080C1EA25B4CE8A0068F4A3 /* CryptoEntity.swift */; };
+		7080C1EF25B4CEEB0068F4A3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080C1EE25B4CEEB0068F4A3 /* Webservice.swift */; };
+		7080C1F425B4D29F0068F4A3 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7080C1F325B4D29F0068F4A3 /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7080C1D725B4CB050068F4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7080C1DA25B4CB050068F4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7080C1DC25B4CB050068F4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7080C1E325B4CDB80068F4A3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7080C1EA25B4CE8A0068F4A3 /* CryptoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoEntity.swift; sourceTree = "<group>"; };
+		7080C1EE25B4CEEB0068F4A3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		7080C1F325B4D29F0068F4A3 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		7080C1CD25B4CB030068F4A3 /* MVVMDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				7080C1CE25B4CB030068F4A3 /* AppDelegate.swift */,
-				7080C1D025B4CB030068F4A3 /* SceneDelegate.swift */,
-				7080C1D225B4CB030068F4A3 /* ViewController.swift */,
+				7080C1E925B4CE770068F4A3 /* ViewModel */,
+				7080C1E825B4CE720068F4A3 /* Service */,
+				7080C1E725B4CE630068F4A3 /* Model */,
+				7080C1E625B4CE5D0068F4A3 /* View */,
 				7080C1D425B4CB030068F4A3 /* Main.storyboard */,
 				7080C1D725B4CB050068F4A3 /* Assets.xcassets */,
 				7080C1D925B4CB050068F4A3 /* LaunchScreen.storyboard */,
 				7080C1DC25B4CB050068F4A3 /* Info.plist */,
 			);
 			path = MVVMDemoApp;
+			sourceTree = "<group>";
+		};
+		7080C1E625B4CE5D0068F4A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7080C1CE25B4CB030068F4A3 /* AppDelegate.swift */,
+				7080C1D025B4CB030068F4A3 /* SceneDelegate.swift */,
+				7080C1D225B4CB030068F4A3 /* ViewController.swift */,
+				7080C1E325B4CDB80068F4A3 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7080C1E725B4CE630068F4A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7080C1EA25B4CE8A0068F4A3 /* CryptoEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7080C1E825B4CE720068F4A3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7080C1EE25B4CEEB0068F4A3 /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7080C1E925B4CE770068F4A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7080C1F325B4D29F0068F4A3 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7080C1D325B4CB030068F4A3 /* ViewController.swift in Sources */,
+				7080C1E425B4CDB80068F4A3 /* TableViewCell.swift in Sources */,
+				7080C1EF25B4CEEB0068F4A3 /* Webservice.swift in Sources */,
+				7080C1F425B4D29F0068F4A3 /* CryptoViewModel.swift in Sources */,
 				7080C1CF25B4CB030068F4A3 /* AppDelegate.swift in Sources */,
 				7080C1D125B4CB030068F4A3 /* SceneDelegate.swift in Sources */,
+				7080C1EB25B4CE8A0068F4A3 /* CryptoEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
